@@ -4,10 +4,11 @@
 
 > Some of the structures are quicker in insert and delete elements others in retrieving
 
-### Classes implementations 
+### Classes implementations of Collections Framework
 
 > **Note**
-> All of these interfaces extend Collections interface, that consequently extend iterable.
+> - All of these interfaces extend Collections interface, that consequently extend iterable.
+> - Collections can't allow hold primitive types
 
 #### List
 - ArrayList
