@@ -6,6 +6,9 @@
 
 ### Classes implementations 
 
+> **Note**
+> All of these interfaces extend Collections interface, that consequently extend iterable.
+
 #### List
 - ArrayList
 - LinkedList
@@ -29,6 +32,3 @@
 - TreeSet
 
 > **Sorted** interface extends **Set** interface.
-
-> **Note**
-> All of these interfaces extend Collections interface, that consequently extend iterable.
