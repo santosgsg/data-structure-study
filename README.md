@@ -6,9 +6,10 @@
 
 ### Classes implementations of Collections Framework
 
+![logo](java-collection-hierarchy.png)
+
 > **Note**
-> - All of these interfaces extend Collections interface, that consequently extend iterable.
-> - Collections can't allow hold primitive types
+> Collections can't allow hold primitive types
 
 #### List
 - ArrayList
