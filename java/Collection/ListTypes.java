@@ -5,24 +5,12 @@ import java.util.*;
 public class ListTypes {
     public static void main(String[] args) {
 
-        List a = new ArrayList();
-        List b = new LinkedList();
-        List c = new Vector();
-        List d = new Stack();
+        List<String> a = new ArrayList();
+        List<String> b = new LinkedList();
+        List<String> c = new Vector();
+        List<String> d = new Stack();
 
         //They share the same Interface (List)
-
-    //------------------------------------------
-
-
-        //Simple array
-            // We have to initiate the variable with the length, that is, can't be changed
-            // Can contain primitive or object types
-            // Each element in array has to be the same type
-
-        String[] arr = new String[3];
-
-        // java.util.Arrays is the class that implements array utility methods
 
     //------------------------------------------
         //LinkedLists are quite quick at adding and removing elements
@@ -37,24 +25,36 @@ public class ListTypes {
         linkedListThreadSafe(b);
 
     //------------------------------------------
+        //Stack is synchronized (Thread safe)
+
+        stack(d);
+
+    }
+
+    private static void stack(List stack) {
+        stack.add("First request");
+        stack.add("Second request");
+        stack.add("Third request");
+        System.out.println("[Stack] " + stack);
+
     }
 
     private static void linkedListThreadSafe(List b) {
         List bCopy = Collections.synchronizedList(b); //make a copy of the list, but synchronized.
-        // now is thread safe
+        // now, bCopy is thread safe
     }
 
     private static void linkedList(List<String> b) {
         b.add("1");
         b.add("1");
         b.add("1");
-        System.out.println(b);
+        System.out.println("[LinkedList] " + b);
 
         b.add(1,"0");
-        System.out.println(b);
+        System.out.println("[LinkedList] " + b);
 
         ((LinkedList<String>) b).removeFirst();
-        System.out.println(b);
+        System.out.println("[LinkedList] " + b);
     }
 
 
